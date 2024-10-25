@@ -62,8 +62,10 @@ def icao(letter):
 
 # Function usage
 name = input('Enter your name: ')
-print('ICAO words for spelling out your name:')
 
-for char in ...:
-    word = icao...
-    print(..., end=" ") 
+word=""
+for char in name:
+    word = word + " " + icao(char)
+    
+
+print(f'ICAO words for spelling out your name: {word}')

@@ -1,49 +1,16 @@
 def time_string(hours, minutes, time_format):
-    len_hours = len(str(hours))
-    len_minutes = len(str(minutes))
-    
-   
-    if time_format==24:
-       new_hours=""
-       new_minutes=""
-       
-       if len_hours == 1:
-           new_hours= "0"+ str(hours)
+    if time_format == '24':
+        # Format hours and minutes with leading zeros for 24-hour format
+        return f"{hours:02}:{minutes:02}"
+    elif time_format == '12':
+        # Determine am/pm suffix
+        suffix = 'am' if hours < 12 else 'pm'
+        # Convert 0 hour to 12 for 12-hour format
+        display_hour = hours % 12 or 12
+        return f"{display_hour}:{minutes:02}{suffix}"
+    else:
+        raise ValueError("Invalid time format. Use '24' or '12'.")
 
-       elif len_hours == 2:
-           new_hours = str(hours)
-
-       if len_minutes==1:
-           new_minutes= "0"+ str(minutes)
-           
-       elif len_minutes == 2:
-           new_minutes= str(minutes)
-
-       else: print("wrong minutes or hours format")
-       
-       new_time = new_hours + ":" + new_minutes
-    
-    elif time_format==12:
-        new_hours=""
-        new_minutes=""
-
-
-
-
-
-
-        
-
-    else: print("wrong time format")
-
-    
-    return new_time
-     
-
-
-
-print(time_string(5, 4 ,24 ))
-    
-    
-   
+# Testing the function
+print(time_string(13, 00, '12'))  # Expected: '15:38'
 

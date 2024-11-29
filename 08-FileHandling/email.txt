@@ -1,0 +1,31 @@
+Return-Path: <jan.kowalski@example.com>
+Received: from mail.example.com (mail.example.com [192.168.1.100])
+    by smtp.example.com (Postfix) with ESMTP id ABC12345
+    for <anna.nowak@example.com>; Tue, 8 Oct 2024 14:32:15 +0200 (CEST)
+Received: from [192.168.1.10] (unknown [192.168.1.10])
+    by mail.example.com (Postfix) with ESMTPSA id DEF67890
+    for <anna.nowak@example.com>; Tue, 8 Oct 2024 14:32:14 +0200 (CEST)
+Message-ID: <20241008143214.DEF67890@mail.example.com>
+Date: Tue, 8 Oct 2024 14:32:14 +0200
+From: Jan Kowalski <jan.kowalski@example.com>
+To: Anna Nowak <anna.nowak@example.com>
+Subject: Report request
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+
+Hi Anna,
+
+I hope everything is going well with you.
+I wanted to ask, have you managed to prepare
+the sales report for September yet?
+
+I need it by the end of the week, Friday,
+October 11, 2024.
+
+Please let me know if you have any questions.
+
+Best regards,
+Jan Kowalski
+jan.kowalski@example.com
++48 123 456 789

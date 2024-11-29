@@ -114,10 +114,10 @@ stalj@uek.krakow.pl
     #
     basic_salary = 5000
     total_salary = 0
-    is_bonus = True # does the employee receive a bonus
     bonus = 0.15 # 15%
-    
-    if ...:
+    is_bonus = input('Does the employee receive a bonus? (Y/N):') == 'Y'
+
+    if is_bonus:
         total_salary = ...
     else:
         ...
@@ -204,7 +204,7 @@ stalj@uek.krakow.pl
     print('Total fuel consumption over a distance of ... km in driving mode ... is ... liters')
     ```
 
-1. Write a program that acts as a simple calculator. The program asks the user to enter a symbol of mathematical operation (+, -, *, /) and two numbers. The program should perform the appropriate mathematical operation on the given numbers and return the result. Then, using the program, calculate:
+1. Write a program that acts as a simple calculator. The program asks the user to enter a symbol of mathematical operation (+, -, *, /) and two numbers. Then, the program performs the appropriate mathematical operation on the given numbers and returns the result. Using the program, calculate:
 
     * 2 + 3
     * 2 * 4
@@ -221,6 +221,15 @@ stalj@uek.krakow.pl
     number1 = input ...
     number2 = input ...
     operator = input ...
+
+    if operator == ...:
+        result = ...
+    elif ...
+    ...
+    ...
+
+    # print result
+    print(f'{number1} {operator} {number2} = {result}')
     ```
 
 1. Write a program that calculates and prints the quarter of the year for a given month number (1..12). Then check the program's results for the months:
@@ -276,7 +285,7 @@ stalj@uek.krakow.pl
 
 1. The discount is available to children under 18, or people 65 or older. Write a program that checks whether a person of a given age is eligible for the discount. Then use the program to check if people of the age listed below are eligible for a discount.
 
-    72, 65, 64, 18, 17
+    72 (discount), 65 (discount), 64, 18, 17 (discount)
 
     ```python
     ###
@@ -397,16 +406,17 @@ stalj@uek.krakow.pl
     ###
     # Prints the name of university where you are studying
     # with an extra space between characters (add a space between
-    # each character)
+    # each character), e.g.
+    # 'book' -> 'b o o k'
     #
     university = 'Krakow University of Economics'
     university_expanded = ''
 
     for char in university:
-        univerity_expanded = ...university_expanded + ... + ...
+        university_expanded = university_expanded + ... + ...
 
-    print(...)
-    print(...)
+    print(...) # original university name
+    print(...) # expanded university name
     ```
 
     Sample result:
@@ -606,6 +616,8 @@ stalj@uek.krakow.pl
 
 
 ## 6. Practice Makes Perfect
+
+1. Read the chapter in your class textbook that covers the topics in this section.
 
 1. The vowels.py program counts vowels in the text. Modify the program. Replace the 'for' statement with a 'while' statement. 
 

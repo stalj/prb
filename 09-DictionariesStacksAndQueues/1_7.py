@@ -18,10 +18,3 @@ for product, quantity in store.items():
 total_products = sum(store.values())
 print("Total number of products in store:", total_products)
 
-# price_list = {
-#     'T-shirt': 19.99,
-#     'Jeans': 49.99,
-#     'Jacket': 89.99,
-#     'Sneakers': 59.99,
-#     'Hat': 15.99
-# }

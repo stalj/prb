@@ -4,7 +4,7 @@ def read_from_file(name):
    return content
 
 # reads the entire file and splits lines into array
-file_content = read_from_file('car_park.txt')
+file_content = read_from_file('08-FileHandling\car_park.txt')
 file_lines = file_content.splitlines()
 
 

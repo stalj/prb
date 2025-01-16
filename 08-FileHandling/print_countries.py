@@ -1,6 +1,7 @@
 ###
 # Reads from file, line by line
-#
-with open('countries.txt', 'r') as file:
+i=1
+with open('08-FileHandling\countries.txt', 'r') as file:
     for line in file:
-        print(line, end="")
+        print(f'{i} {line}')
+        i+=1
